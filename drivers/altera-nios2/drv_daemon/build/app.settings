@@ -49,6 +49,7 @@ ${APC_BASE_DIR}/contrib/prodtest \
 "
 
 APP_CFLAGS="\
+-DCONFIG_PCIE
 "
 
 APP_OPT_LEVEL=-O2
