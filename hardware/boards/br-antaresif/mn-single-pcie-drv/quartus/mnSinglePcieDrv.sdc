@@ -43,11 +43,6 @@ set_false_path -from [get_registers *]      -to [get_ports oFlash_DI]
 set_false_path -from [get_ports iFlash_DO]  -to [get_registers *]
 
 # ------------------------------------------------------------------------------
-# PCIe
-# -> Cut from/to pcie core clock
-set_clock_groups -asynchronous -group [get_clocks $clkpciecore]
-
-# ------------------------------------------------------------------------------
 # PHY LINK and LEDs
 # -> Cut path
 set_false_path -from [get_ports iLinkPlkPhy]    -to *
